@@ -4,5 +4,5 @@ import { colors } from "../UI/colors";
 export const LeftNavbar = styled.div`
     width: 172px;
     height: 100vh;
-    background: ${colors.navbar};
+    background: ${colors.navbarBackground};
 `;

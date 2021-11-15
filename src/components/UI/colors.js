@@ -1,4 +1,5 @@
 export const colors = {
-    navbar: "#343951",
-    white: "#FFFFFF"
+    navbarBackground: "#343951",
+    white: "#FFFFFF",
+    navbarColor: "#858A9D",
 };

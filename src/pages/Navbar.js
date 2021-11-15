@@ -9,17 +9,19 @@ const options = [
     { id: "4", name: "shared files", link: "/sharedfiles" },
     { id: "5", name: "file request", link: "/filerequest" },
     { id: "6", name: "trash", link: "/trash" }
+];
+
+const prevState = [
+    { id: "1", active:false  },
+    { id: "2", active:false  },
+    { id: "3", active:false  },
+    { id: "4", active:false  },
+    { id: "5", active:false  },
+    { id: "6", active:false  },
 ]
 
 const Navbar = () => {
-    const [selected, setSelected] = useState({
-        "1": false,
-        "2": false,
-        "3": false,
-        "4": false,
-        "5": false,
-        "6": false,
-    })
+    const [selected, setSelected] = useState(prevState)
     return (
         <LeftNavbar>
             {

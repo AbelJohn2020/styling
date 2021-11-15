@@ -4,20 +4,49 @@ import { colors } from "../UI/colors";
 
 export const Option = styled.div(({state}) => css`
     width: 100%;
-    background: gray;
+    display: flex;
+    height: 44px;
+    justify-content: right;
 
     .white {
-        width: 8px;
-        display: ${ state === true ? 'flex' : 'none'};
+        width: 4px;
+        display: ${ state.active === true ? 'flex' : 'none'};
+        border-radius: 0 6px 6px 0;
         border: ${colors.white} solid 2px;
         background: ${colors.white};
     }
 
     .styles {
+        width: 95%;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .styles:visited {
+        color: ${colors.navbarColor}
+    }
+
+    .icon,
+    .name {
+        display: flex;
+        color: ${ state.active === true ? colors.white : colors.navbarColor};
     }
 
     .icon {
-        color: green;
+        width: 20%;
+        justify-content: right;
+    }
+
+    .name {
+        width: 70%;
+        justify-content: left;
+        text-transform: capitalize;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
     }
 `);
