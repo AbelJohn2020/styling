@@ -12,4 +12,6 @@ export const colors = {
     search: "#434343",
     lightIcon: "#9D9FAF",
     darkIcon: "#343951",
+    shadowSquare: "#FFD999",
+    ellipsis: "#C4C4C4",
 };
