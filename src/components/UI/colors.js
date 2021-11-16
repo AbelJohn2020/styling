@@ -14,4 +14,7 @@ export const colors = {
     darkIcon: "#343951",
     shadowSquare: "#FFD999",
     ellipsis: "#C4C4C4",
+    cyan: "#4AC29D",
+    red: "#FF6860",
+    ochre: "#FF9F00",
 };

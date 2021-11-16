@@ -24,8 +24,9 @@ export const Option = styled.div(({state}) => css`
         justify-content: space-between;
         align-items: center;
         text-decoration: none;
-        color: ${colors.navbarColor}
+        color: ${colors.navbarColor};
         box-sizing: border-box;
+        outline: none;
     }
 
     .styles:visited {

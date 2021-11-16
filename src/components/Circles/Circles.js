@@ -1,28 +1,32 @@
 import React from 'react'
 import { BoxCircle, Circle, CircleNoNumber, CircleNumber } from './CirclesStyles'
 
-const Circles = ({circles}) => {
+const Circles = ({ numbers, circles, firstC, secondC, thirdC }) => {
     return (
         <div>
                 {
                     circles >= 1
                         ?   <BoxCircle>
                                 <Circle width="12px">
-                                    <CircleNoNumber></CircleNoNumber>
+                                    <CircleNoNumber background={firstC}></CircleNoNumber>
                                 </Circle>
                                 <Circle width="12px">
-                                    <CircleNoNumber></CircleNoNumber>
+                                    <CircleNoNumber background={secondC}></CircleNoNumber>
                                 </Circle>
                                 <Circle>
-                                    <CircleNumber>+{circles}</CircleNumber>
+                                    {
+                                        numbers === true 
+                                            ?   <CircleNumber background={thirdC}>+{circles}</CircleNumber>
+                                            :   <CircleNoNumber background={thirdC}></CircleNoNumber>
+                                    }
                                 </Circle>
                             </BoxCircle>
                         :   <BoxCircle>
                                 <Circle width="12px">
-                                    <CircleNoNumber></CircleNoNumber>
+                                    <CircleNoNumber background={firstC}></CircleNoNumber>
                                 </Circle>
                                 <Circle width="12px">
-                                    <CircleNoNumber></CircleNoNumber>
+                                    <CircleNoNumber background={secondC}></CircleNoNumber>
                                 </Circle>
                             </BoxCircle>
                 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Date, Title } from './TitleCardStyles'
 
-const TitleCard = ({ name, date }) => {
+const TitleCard = ({ name, date, padding, capitalize }) => {
     return (
         <div>
-            <Title>
+            <Title padding={padding} capitalize={capitalize}>
                 {name}
             </Title>
             <Date>

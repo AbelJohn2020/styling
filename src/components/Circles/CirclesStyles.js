@@ -16,16 +16,16 @@ export const Circle = styled.div(({width}) => css`
     padding: 0;
 `);
 
-export const CircleNoNumber = styled.div`
+export const CircleNoNumber = styled.div(({background}) => css`
     width: 9px;
     height: 9px;
     padding: 3px;
-    border: ${colors.extraOption} solid 1px;
+    border: ${background} solid 1px;
     border-radius: 100%;
     background: ${colors.white};
-`;
+`);
 
-export const CircleNumber = styled.div`
+export const CircleNumber = styled.div(({background}) => css`
     padding: 3px;
     box-sizing: border-box;
     font-family: 'Roboto';
@@ -36,7 +36,7 @@ export const CircleNumber = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: ${colors.extraOption} solid 1px;
+    border: ${background} solid 1px;
     border-radius: 100%;
     background: ${colors.white};
-`;
+`);

@@ -2,9 +2,11 @@ import styled from "@emotion/styled";
 import { colors } from "../UI/colors";
 
 export const Headers = styled.div`
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 0 36px 0;
     display: grid;
     grid-template-columns: 30% 40% 30%;
-
     .icon {
         color: ${colors.ellipsis};
     }
