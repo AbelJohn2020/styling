@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import ExtrasNavbar from '../components/ExtrasNavbar/ExtrasNavbar';
-import { BottomNavbar, Extras, LeftNavbar, LinearGradient } from '../components/Navbar/NavbarStyles';
+import { BottomNavbar, BoxPlus, CreateNew, Extras, LeftNavbar, LinearGradient, NameCreateNew } from '../components/Navbar/NavbarStyles';
 import NavbarOption from '../components/NavbarOption/NavbarOption';
+import { BiPlus } from "react-icons/bi";
 
 const prevState = [
     { id: "1", active:false  },
@@ -50,6 +51,14 @@ const Navbar = () => {
                         ))
                     }
                 </Extras>
+                <CreateNew>
+                    <NameCreateNew>
+                        create new
+                    </NameCreateNew>
+                    <BoxPlus>
+                        <BiPlus className='plus'/>
+                    </BoxPlus>
+                </CreateNew>
             </BottomNavbar>
         </LeftNavbar>
     )

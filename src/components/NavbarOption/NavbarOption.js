@@ -30,7 +30,7 @@ const NavbarOption = ({id, name, link, state, setSate}) => {
             <div className="white"></div>
             <Link to={link} className="styles" onClick={handleClick} id={id}>
                 <div className='icon'>
-                    <IoSquareOutline className="icon__square"/>
+                    <IoSquareOutline/>
                 </div>
                 <div className='name'>
                     {name}

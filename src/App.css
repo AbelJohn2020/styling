@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+
+.App {
+    display: grid;
+    grid-template-columns: 12% 88%;
+    column-gap: 20px;
+}

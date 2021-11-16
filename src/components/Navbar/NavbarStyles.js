@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
 import { colors } from "../UI/colors";
+import "../UI/global.css";
 
 export const LeftNavbar = styled.div`
-    width: 172px;
+    width: 100%;
     padding: 36px 0 28px 0;
     background: ${colors.navbarBackground};
     display: flex;
@@ -28,7 +29,7 @@ export const LinearGradient = styled.div`
 `;
 
 export const Extras = styled.div`
-    width: 116px;
+    width: 100%;
     padding: 20px 14px 18px 14px;
     background: ${colors.backgroundExtrasNavbar};
     border-radius: 8px;
@@ -41,5 +42,37 @@ export const BottomNavbar = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 161px 0 28px 0;
+    padding: 132px 24px 0 24px;
+`;
+
+export const CreateNew = styled.button`
+    width: 100%;
+    box-sizing: border-box;
+    background: ${colors.createNewBackround};
+    display: flex;
+    margin: 20px 0 0 0;
+    padding: 4px;
+    border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+`;
+
+export const BoxPlus = styled.div`
+    padding: 8px;
+    background: ${colors.boxPlus};
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const NameCreateNew = styled.div`
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Roboto';
+    padding: 0 8px;
 `;

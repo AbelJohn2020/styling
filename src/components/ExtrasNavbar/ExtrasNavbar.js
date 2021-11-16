@@ -6,7 +6,7 @@ const ExtrasNavbar = ({name}) => {
     return (
         <ExtraOpion>
             <div className='icon'>
-                <IoSquareOutline className="icon__square"/>
+                <IoSquareOutline/>
             </div>
             <div className='name'>
                 {name}

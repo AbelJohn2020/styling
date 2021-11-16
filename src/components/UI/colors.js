@@ -5,4 +5,11 @@ export const colors = {
     extraOption: "#BEC0C8",
     white: "#FFFFFF",
     navbarColor: "#858A9D",
+    createNewBackround: "#FF9F00",
+    boxPlus: "#FFB233",
+    home: "#F5F6FC",
+    placeholder: "#BCBECA",
+    search: "#434343",
+    lightIcon: "#9D9FAF",
+    darkIcon: "#343951",
 };
