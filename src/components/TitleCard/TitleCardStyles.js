@@ -12,6 +12,7 @@ export const Title = styled.h1(({ padding, capitalize, color }) => css`
     line-height: 14px;
     color: ${color};
     text-transform: ${ capitalize === true && 'capitalize' };
+    box-sizing: border-box;
 `);
 
 export const Date = styled.p`
@@ -23,4 +24,5 @@ export const Date = styled.p`
     letter-spacing: 0.05em;
     color: ${colors.navbarColor};
     text-transform: capitalize;
+    box-sizing: border-box;
 `;

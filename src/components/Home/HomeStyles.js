@@ -6,7 +6,6 @@ export const HomeStyles = styled.div`
     width: 100%;
     box-sizing: border-box;
     display: grid;
-    box-sizing: border-box;
     grid-template-columns: 64% 36%;
     gap: 20px;
 `;
@@ -18,7 +17,7 @@ export const HomeLeft = styled.div`
 `;
 
 export const HomeRight = styled.div`
-    padding: 24px 24px 20px 32px;
+    padding: 0;
     box-sizing: border-box;
     background: ${colors.home};    
 `;
@@ -35,4 +34,10 @@ export const ResentFiles = styled.div`
     grid-template-columns: 56% 20% 24%;
     box-sizing: border-box;
     padding: 16px 0 2px 0;
+`;
+
+export const RightFiles = styled.div`
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 24px 32px 32px;
 `;

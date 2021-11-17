@@ -7,7 +7,7 @@ import { Button, Ellipsis, Headers } from './HeaderCardStyles';
 const HeaderCard = ({ numbers, circles, firstC, secondC, thirdC, shadow, background, radius, icon }) => {
     return (
         <Headers>
-            <OcherSquare radius={radius} background={background} shadow={shadow}/>
+            <OcherSquare radius={radius} background={background} shadow={shadow} width="30px" height="26px"/>
             <Circles numbers={numbers} circles={circles} firstC={firstC} secondC={secondC} thirdC={thirdC}/>
             <Ellipsis>
                 {

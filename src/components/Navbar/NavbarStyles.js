@@ -67,6 +67,7 @@ export const BoxPlus = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 `;
 
 export const NameCreateNew = styled.div`
@@ -75,4 +76,5 @@ export const NameCreateNew = styled.div`
     text-transform: capitalize;
     font-family: 'Roboto';
     padding: 0 8px;
+    box-sizing: border-box;
 `;

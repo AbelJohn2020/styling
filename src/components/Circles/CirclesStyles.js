@@ -8,12 +8,14 @@ export const BoxCircle = styled.div`
     height: 100%;
     display: flex;
     align-items: flex-end;
+    box-sizing: border-box;
 `;
 
 export const Circle = styled.div(({width}) => css`
     width: ${width};
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 `);
 
 export const CircleNoNumber = styled.div(({background}) => css`

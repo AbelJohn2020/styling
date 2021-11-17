@@ -1,5 +1,5 @@
+import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { colors } from '../UI/colors';
 import '../UI/global.css';
 
 export const TitleStyles = styled.div`
@@ -25,7 +25,7 @@ export const H2 = styled.h2`
     text-transform: capitalize;
 `;
 
-export const Icons = styled.div`
+export const Icons = styled.div(({darkIcon, lightIcon, backgroundDarkIcon, backgroundLightIcon, margin }) => css`
     display: flex;
     .darkIcon,
     .lightIcon {
@@ -33,10 +33,22 @@ export const Icons = styled.div`
     }
 
     .darkIcon {
-        color: ${colors.darkIcon};
+        color: ${darkIcon};
+        background: ${backgroundDarkIcon};
     }
 
     .lightIcon {
-        color: ${colors.lightIcon};
+        color: ${lightIcon};
+        background: ${backgroundLightIcon};
+        margin: ${margin};
     }
-`;
+`);
+
+export const SubtitleStyles =  styled.h2(({color}) => css`
+    color: ${color};
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 9px;
+`);

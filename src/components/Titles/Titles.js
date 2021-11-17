@@ -1,15 +1,16 @@
 import React from 'react'
-import { H1, H2, Icons, TitleStyles } from './TtitlesStyles';
+import { H1, H2, Icons, SubtitleStyles, TitleStyles } from './TtitlesStyles';
 import { IoSquareOutline } from "react-icons/io5";
+import { colors } from '../UI/colors';
 
-const Titles = ({name, icons, view}) => {
+export const Titles = ({name, icons, view}) => {
     return (
         <TitleStyles>
             <H1>{name}</H1>
             {
-                icons &&    <Icons>
-                                <IoSquareOutline className="darkIcon"/>
-                                <IoSquareOutline className="lightIcon"/>
+                icons &&    <Icons darkIcon={colors.darkIcon} lightIcon={colors.lightIcon} backgroundDarkIcon="transparent" backgroundLightIcon="transparent" margin="0 0 0 4px">
+                                <IoSquareOutline className="darkIcon" />
+                                <IoSquareOutline className="lightIcon" />
                             </Icons>
             }
             {
@@ -19,4 +20,10 @@ const Titles = ({name, icons, view}) => {
     )
 }
 
-export default Titles;
+export const Subtitle = ({files, color}) => {
+    return(
+        <div>
+            <SubtitleStyles color={color}>{files}</SubtitleStyles>
+        </div>
+    )
+}

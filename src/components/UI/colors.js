@@ -15,8 +15,10 @@ export const colors = {
     shadowSquare: "#FFD999",
     ellipsis: "#C4C4C4",
     cyan: "#4AC29D",
+    lightBlue: "#689FF8",
     red: "#FF6860",
     ochre: "#FF9F00",
     green: "#4AC29D",
     tomato: "#FF6860",
+    lightGray: "#E0E7F1",
 };

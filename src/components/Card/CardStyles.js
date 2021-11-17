@@ -12,10 +12,11 @@ export const CardStyles = styled.div`
     box-sizing: border-box;
 `;
 
-export const Square = styled.div(({radius, background, shadow}) => css`
-    width: 30px;
-    height: 26px;
+export const Square = styled.div(({radius, background, shadow, width, height}) => css`
+    width: ${width};
+    height: ${height};
     background: ${background};
     border-radius: ${radius};
-    box-shadow: ${shadow === true && `-5px 5px 0 0 ${colors.shadowSquare}` }
+    box-shadow: ${shadow === true && `-5px 5px 0 0 ${colors.shadowSquare}` };
+    box-sizing: border-box;
 `);

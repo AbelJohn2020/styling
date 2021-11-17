@@ -9,7 +9,7 @@ const Files = ({ radius, background, shadow, padding, capitalize, color, colorsT
     return (
         <CardFile>
             <FileTitle>
-                <OcherSquare radius={ radius } background={ background } shadow={ shadow } />
+                <OcherSquare radius={ radius } background={ background } shadow={ shadow } width="30px" height="26px"/>
                 <Title padding={ paddingTitle } capitalize={ capitalize } color={ colorsTitle }>
                     { title }
                 </Title>

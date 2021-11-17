@@ -33,4 +33,6 @@ export const EllipsisHorizontal = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    box-sizing: border-box;
+
 `;

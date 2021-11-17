@@ -7,6 +7,7 @@ export const Headers = styled.div`
     margin: 0 0 36px 0;
     display: grid;
     grid-template-columns: 30% 40% 30%;
+    box-sizing: border-box;
 `;
 
 export const Ellipsis = styled.div`
@@ -15,6 +16,7 @@ export const Ellipsis = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    box-sizing: border-box;
 `;
 
 export const Button = styled.button`
@@ -24,4 +26,5 @@ export const Button = styled.button`
     cursor: pointer;
     background: transparent;
     color: ${colors.ellipsis};
+    box-sizing: border-box;
 `;
