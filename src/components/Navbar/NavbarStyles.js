@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { colors } from "../UI/colors";
 import "../UI/global.css";
@@ -19,14 +20,14 @@ export const LeftNavbar = styled.div`
     }
 `;
 
-export const LinearGradient = styled.div`
-    width: 74px;
-    height: 21px;
+export const LinearGradient = styled.div(({width, height}) => css`
+    width: ${width};
+    height: ${height};
     margin: 0 0 40px 32px;
     background: linear-gradient(270deg, #689EF8 0%, #FF6860 56.25%, #FF9F00 100%);
     border-radius: 5px;
     box-sizing: border-box;
-`;
+`);
 
 export const Extras = styled.div`
     width: 100%;

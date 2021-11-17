@@ -10,6 +10,7 @@ import HeaderRight from '../components/HeaderRight/HeaderRight';
 // import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import FilesRight from '../components/FilesRight/FilesRight';
+import { LinearGradient } from '../components/Navbar/NavbarStyles';
 
 const mainCards  = [
     { id: 1, circles: 0, name: "app project", date: "20.02.2020", capitalize: true },
@@ -148,6 +149,8 @@ const Home = () => {
                         ))
                     }
                 </RightFiles>
+
+                <LinearGradient width= "120px" height= "72px"></LinearGradient>
             </HomeRight>
         </HomeStyles>
     )

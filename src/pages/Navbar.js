@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <LeftNavbar>
             <div className='topNavbar'>
-                <LinearGradient></LinearGradient>
+                <LinearGradient width= "74px" height= "21px"></LinearGradient>
                 <div className='topNavbar__options'>
                     {
                         options.map(({id, name, link}) => (
