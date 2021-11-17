@@ -36,8 +36,31 @@ export const ResentFiles = styled.div`
     padding: 16px 0 2px 0;
 `;
 
+export const AfterPercent = styled.div`
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24px 0 32px;
+`;
+
 export const RightFiles = styled.div`
     width: 100%;
     box-sizing: border-box;
-    padding: 24px 24px 32px 32px;
+    padding: 24px 0 32px 0;
+`;
+
+
+export const Advertisements = styled.div`
+    background: ${colors.white};
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 38px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    align-items: center;
+`;
+
+export const LimitButton = styled.div`
+    width: 120px;
+    box-sizing: border-box;
 `;

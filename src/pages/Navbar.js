@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <LeftNavbar>
             <div className='topNavbar'>
-                <LinearGradient width= "74px" height= "21px"></LinearGradient>
+                <LinearGradient width= "74px" height= "21px" margin="0 0 40px 32px"></LinearGradient>
                 <div className='topNavbar__options'>
                     {
                         options.map(({id, name, link}) => (
@@ -51,7 +51,7 @@ const Navbar = () => {
                         ))
                     }
                 </Extras>
-                <CreateNew>
+                <CreateNew capitalize={false} padding="4px">
                     <NameCreateNew>
                         create new
                     </NameCreateNew>

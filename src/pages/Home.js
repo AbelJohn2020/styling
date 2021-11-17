@@ -1,42 +1,17 @@
 import React from 'react';
 import Card from '../components/Card/Card';
-import { Board, HomeLeft, HomeRight, HomeStyles, ResentFiles, RightFiles } from '../components/Home/HomeStyles';
+import { Advertisements, AfterPercent, Board, HomeLeft, HomeRight, HomeStyles, LimitButton, ResentFiles, RightFiles } from '../components/Home/HomeStyles';
 import Input from '../components/Input/Input';
 import { colors } from '../components/UI/colors';
 import { Title } from '../components/TitleCard/TitleCardStyles'
-import { Titles } from '../components/Titles/Titles';
+import { Subtitle, Titles } from '../components/Titles/Titles';
 import Files from '../components/Files/Files';
 import HeaderRight from '../components/HeaderRight/HeaderRight';
 // import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import FilesRight from '../components/FilesRight/FilesRight';
-import { LinearGradient } from '../components/Navbar/NavbarStyles';
-
-const mainCards  = [
-    { id: 1, circles: 0, name: "app project", date: "20.02.2020", capitalize: true },
-    { id: 2, circles: 0, name: "Project: fitbit", date: "28.02.2020", capitalize: false },
-    { id: 3, circles: 3, name: "client documents", date: "4.03.2020", capitalize: true },
-]
-
-const footerCards = [
-    { id: 4, circles: 0, name: "panding page", date: "20.02.2020", capitalize: true },
-    { id: 5, circles: 3, name: "ilustration pack", date: "20.02.2020", capitalize: true },
-    { id: 6, circles: 0, name: "cV design", date: "20.02.2020", capitalize: true },
-]
-
-const files = [
-    { id: 7, title: "travel landing page", members: "5 members", date: "Mar 8, 2020", background: colors.ochre, padding: "4px 0", capitalize: true, color: colors.navbarColor, colorsTitle: colors.darkIcon, paddingTitle: "4px 0 4px 12px"},
-    { id: 8, title: "true photos", members: "12 members", date: "Mar 8, 2020", background: colors.green, padding: "4px 0", capitalize: true, color: colors.navbarColor, colorsTitle: colors.darkIcon, paddingTitle: "4px 0 4px 12px" },
-    { id: 9, title: "dashboard structure", members: "10 members", date: "Mar 9, 2020", background: colors.tomato, padding: "4px 0", capitalize: true, color: colors.navbarColor, colorsTitle: colors.darkIcon, paddingTitle: "4px 0 4px 12px" },
-    { id: 10, title: "character illustration", members: "3 members", date: "Mar 10, 2020", background: colors.ochre, padding: "4px 0", capitalize: true, color: colors.navbarColor, colorsTitle: colors.darkIcon, paddingTitle: "4px 0 4px 12px" },
-];
-
-const rightFiles = [
-    { background: colors.ochre, paddingTitle: "0 0 2px 0", title: "documents", files: "720 files", storage: "200 gb", colorSubtitle: colors.navbarColor },
-    { background: colors.lightBlue, paddingTitle: "0 0 2px 0", title: "documents", files: "720 files", storage: "125 gb", colorSubtitle: colors.navbarColor },
-    { background: colors.green, paddingTitle: "0 0 2px 0", title: "documents", files: "720 files", storage: "75 gb", colorSubtitle: colors.navbarColor },
-    { background: colors.placeholder, paddingTitle: "0 0 2px 0", title: "documents", files: "720 files", storage: "50 gb", colorSubtitle: colors.navbarColor },
-]
+import { CreateNew, LinearGradient } from '../components/Navbar/NavbarStyles';
+import { files, footerCards, mainCards, rightFiles } from '../db/fakeData';
 
 const Home = () => {
 
@@ -136,21 +111,32 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <RightFiles>
-                    {
-                        rightFiles.map(({background, paddingTitle, title, files, storage, colorSubtitle}) => (
-                            <FilesRight 
-                                background={background} 
-                                paddingTitle={paddingTitle} 
-                                title={title} 
-                                files={files} 
-                                storage={storage} 
-                                colorSubtitle={colorSubtitle}/>
-                        ))
-                    }
-                </RightFiles>
-
-                <LinearGradient width= "120px" height= "72px"></LinearGradient>
+                <AfterPercent>
+                    <RightFiles>
+                        {
+                            rightFiles.map(({id, background, paddingTitle, title, files, storage, colorSubtitle}) => (
+                                <FilesRight 
+                                    key={id}
+                                    background={background} 
+                                    paddingTitle={paddingTitle} 
+                                    title={title} 
+                                    files={files} 
+                                    storage={storage} 
+                                    colorSubtitle={colorSubtitle}/>
+                            ))
+                        }
+                    </RightFiles>
+                    <Advertisements>
+                        <LinearGradient width= "120px" height= "72px" margin="0 0 24px 0"></LinearGradient>
+                        <Title padding="0 0 4px 0" capitalize={false} color={colors.darkIcon}>
+                            Buy more space now!
+                        </Title>
+                        <Subtitle files="Upgrade to cloud premium" color={colors.navbarColor}/>
+                        <LimitButton>
+                            <CreateNew capitalize={true} padding="10px 18px" size="10px">upgrade account!</CreateNew>
+                        </LimitButton>
+                    </Advertisements>
+                </AfterPercent>
             </HomeRight>
         </HomeStyles>
     )

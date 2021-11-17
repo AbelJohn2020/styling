@@ -20,10 +20,10 @@ export const LeftNavbar = styled.div`
     }
 `;
 
-export const LinearGradient = styled.div(({width, height}) => css`
+export const LinearGradient = styled.div(({width, height, margin}) => css`
     width: ${width};
     height: ${height};
-    margin: 0 0 40px 32px;
+    margin: ${margin};
     background: linear-gradient(270deg, #689EF8 0%, #FF6860 56.25%, #FF9F00 100%);
     border-radius: 5px;
     box-sizing: border-box;
@@ -46,20 +46,22 @@ export const BottomNavbar = styled.div`
     padding: 132px 24px 0 24px;
 `;
 
-export const CreateNew = styled.button`
+export const CreateNew = styled.button(({capitalize, padding, size="none"}) => css`
     width: 100%;
     box-sizing: border-box;
     background: ${colors.createNewBackround};
     display: flex;
     margin: 20px 0 0 0;
-    padding: 4px;
+    padding: ${padding};
     border: none;
     outline: none;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     cursor: pointer;
-`;
+    text-transform: ${capitalize === true && 'capitalize'};
+    font-size: ${capitalize === true && size };
+`);
 
 export const BoxPlus = styled.div`
     padding: 8px;

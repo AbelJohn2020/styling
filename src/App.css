@@ -5,7 +5,7 @@
 
 .App {
     display: grid;
-    grid-template-columns: 12% 85.3%;
+    grid-template-columns: 14% 83.3%;
     column-gap: 20px;
     box-sizing: border-box;
 }

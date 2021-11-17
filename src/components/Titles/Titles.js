@@ -20,10 +20,10 @@ export const Titles = ({name, icons, view}) => {
     )
 }
 
-export const Subtitle = ({files, color}) => {
+export const Subtitle = ({files, color, padding="0"}) => {
     return(
         <div>
-            <SubtitleStyles color={color}>{files}</SubtitleStyles>
+            <SubtitleStyles color={color} padding={padding}>{files}</SubtitleStyles>
         </div>
     )
 }

@@ -44,8 +44,9 @@ export const Icons = styled.div(({darkIcon, lightIcon, backgroundDarkIcon, backg
     }
 `);
 
-export const SubtitleStyles =  styled.h2(({color}) => css`
+export const SubtitleStyles =  styled.h2(({color, padding}) => css`
     color: ${color};
+    padding: ${padding};
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
