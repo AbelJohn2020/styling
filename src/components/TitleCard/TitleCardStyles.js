@@ -3,15 +3,15 @@ import styled from '@emotion/styled';
 import { colors } from '../UI/colors';
 import '../UI/global.css';
 
-export const Title = styled.h1(({ padding, capitalzie }) => css`
+export const Title = styled.h1(({ padding, capitalize, color }) => css`
     padding: ${padding};
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-    color: ${colors.darkIcon}
-    text-transform: ${capitalzie === true && 'capitalize'};
+    color: ${color};
+    text-transform: ${ capitalize === true && 'capitalize' };
 `);
 
 export const Date = styled.p`

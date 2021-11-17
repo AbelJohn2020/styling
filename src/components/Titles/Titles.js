@@ -1,8 +1,8 @@
 import React from 'react'
-import { H1, H2, Icons, TitleStyles } from './TtitleStyles';
+import { H1, H2, Icons, TitleStyles } from './TtitlesStyles';
 import { IoSquareOutline } from "react-icons/io5";
 
-const Title = ({name, icons, view}) => {
+const Titles = ({name, icons, view}) => {
     return (
         <TitleStyles>
             <H1>{name}</H1>
@@ -19,4 +19,4 @@ const Title = ({name, icons, view}) => {
     )
 }
 
-export default Title;
+export default Titles;

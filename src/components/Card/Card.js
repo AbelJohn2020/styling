@@ -3,7 +3,7 @@ import HeaderCard from '../HeaderCard/HeaderCard';
 import TitleCard from '../TitleCard/TitleCard';
 import { CardStyles } from './CardStyles';
 
-const Card = ({ capitalize, numbers, circles, firstC, secondC, thirdC, background, shadow, radius, icon, name, date, padding }) => {
+const Card = ({ capitalize, numbers, circles, firstC, secondC, thirdC, background, shadow, radius, icon, name, date, padding, color }) => {
     return (
         <CardStyles>
             <HeaderCard 
@@ -17,7 +17,7 @@ const Card = ({ capitalize, numbers, circles, firstC, secondC, thirdC, backgroun
                 radius= {radius }
                 icon={ icon }
             />
-            <TitleCard name={name} date={date} padding={padding} capitalize={capitalize} />
+            <TitleCard name={name} date={date} padding={padding} capitalize={capitalize} color={color}/>
         </CardStyles>
     )
 }

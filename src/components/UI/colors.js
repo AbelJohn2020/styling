@@ -17,4 +17,6 @@ export const colors = {
     cyan: "#4AC29D",
     red: "#FF6860",
     ochre: "#FF9F00",
+    green: "#4AC29D",
+    tomato: "#FF6860",
 };

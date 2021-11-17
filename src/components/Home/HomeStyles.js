@@ -29,3 +29,10 @@ export const Board = styled.div`
     box-sizing: border-box;
     margin: 24px 0 40px 0;
 `;
+
+export const ResentFiles = styled.div`
+    display: grid;
+    grid-template-columns: 56% 20% 24%;
+    box-sizing: border-box;
+    padding: 16px 0 2px 0;
+`;
