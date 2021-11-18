@@ -1,13 +1,13 @@
 import React from 'react';
 import Card from '../components/Card/Card';
-import { Advertisements, AfterPercent, Board, HomeLeft, HomeRight, HomeStyles, LimitButton, ResentFiles, RightFiles } from '../components/Home/HomeStyles';
+import { Advertisements, Board, HomeLeft, HomeRight, HomeStyles, LimitButton, PercentDiv, PercentDivDiv, ResentFiles, RightFiles, Statistics } from '../components/Home/HomeStyles';
 import Input from '../components/Input/Input';
 import { colors } from '../components/UI/colors';
 import { Title } from '../components/TitleCard/TitleCardStyles'
 import { Subtitle, Titles } from '../components/Titles/Titles';
 import Files from '../components/Files/Files';
 import HeaderRight from '../components/HeaderRight/HeaderRight';
-// import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import FilesRight from '../components/FilesRight/FilesRight';
 import { CreateNew, LinearGradient } from '../components/Navbar/NavbarStyles';
@@ -100,18 +100,32 @@ const Home = () => {
             </HomeLeft>
             <HomeRight>
                 <HeaderRight name="name" background={colors.ellipsis} width="32px" />
-                <div>
-                    <Title padding="0 0 22px 0" capitalize={true} color={colors.darkIcon}>
-                        storage
-                    </Title>
+                <Statistics>
                     <div>
-                        {/* <CircularProgressbar value={85} text={`${85}%`}/> */}
-                        <div>
-                            
-                        </div>
+                        <Titles name="Storage" icons={false} view={true} />
+                        <PercentDiv>
+                            <PercentDivDiv>
+                                <CircularProgressbar 
+                                    value={85} 
+                                    text={`${85}%`} 
+                                    styles={{ 
+                                        path: {
+                                            stroke: `${colors.lightBlue}`,
+                                            strokeLinecap: 'butt',
+                                            transition: 'stroke-dashoffset 0.5s ease 0s',
+                                            transform: 'rotate(0.25turn)',
+                                            transformOrigin: 'center center',
+                                        },
+                                        text: {
+                                            fill: `${colors.lightBlue}`,
+                                            fontSize: '24px',
+                                        },
+                                }}
+                                />
+                            </PercentDivDiv>
+                            <Subtitle files="420.2 GB of 500 GB used" color={colors.navbarColor}/>
+                        </PercentDiv>
                     </div>
-                </div>
-                <AfterPercent>
                     <RightFiles>
                         {
                             rightFiles.map(({id, background, paddingTitle, title, files, storage, colorSubtitle}) => (
@@ -136,7 +150,7 @@ const Home = () => {
                             <CreateNew capitalize={true} padding="10px 18px" size="10px">upgrade account!</CreateNew>
                         </LimitButton>
                     </Advertisements>
-                </AfterPercent>
+                </Statistics>
             </HomeRight>
         </HomeStyles>
     )

@@ -36,10 +36,10 @@ export const ResentFiles = styled.div`
     padding: 16px 0 2px 0;
 `;
 
-export const AfterPercent = styled.div`
+export const Statistics = styled.div`
     width: 100%;
     box-sizing: border-box;
-    padding: 0 24px 0 32px;
+    padding: 16px 24px 0 32px;
 `;
 
 export const RightFiles = styled.div`
@@ -62,5 +62,20 @@ export const Advertisements = styled.div`
 
 export const LimitButton = styled.div`
     width: 120px;
+    box-sizing: border-box;
+`;
+
+export const PercentDiv = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+`;
+
+export const PercentDivDiv = styled.div`
+    margin: 22px 0 20px 0;
+    width: 140px; 
+    height: 140px;
     box-sizing: border-box;
 `;
