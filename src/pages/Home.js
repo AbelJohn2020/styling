@@ -107,7 +107,7 @@ const Home = () => {
                             <PercentDivDiv>
                                 <CircularProgressbar 
                                     value={85} 
-                                    text={`${85}%`} 
+                                    text={`85%`} 
                                     styles={{ 
                                         path: {
                                             stroke: `${colors.lightBlue}`,
